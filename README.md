@@ -53,5 +53,6 @@ exploring the api:
 [k for k in dir(hub)]
 ```
 
-references
+references:
 [micropython on instructables](https://www.instructables.com/MicroPython-on-SPIKE-Prime/)
+[spike-prime](https://github.com/gpdaniels/spike-prime)
