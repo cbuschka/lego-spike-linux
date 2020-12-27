@@ -3,8 +3,11 @@
 add user to group dialout or become root
 
 ```
-usermod -a -G dialout ${USER}
+usermod -a -G dialout conni
 ```
+
+YOU MUST RELOGIN!
+
 
 connect via usb
 ```
@@ -37,10 +40,8 @@ crw-rw----. 1 root dialout 166, 0 Dec 27 13:16 /dev/ttyACM0
 
 open terminal
 ```
-screen /dev/ttyACM0 115200
+make screen
 ```
-
-press control-c when receiving sensor data stream
 
 ```
 import hub
@@ -53,6 +54,13 @@ exploring the api:
 [k for k in dir(hub)]
 ```
 
+### connect via rshell ("robot" shell, NOT remote shell)
+```
+make rshell
+```
+
 references:
 [micropython on instructables](https://www.instructables.com/MicroPython-on-SPIKE-Prime/)
 [spike-prime](https://github.com/gpdaniels/spike-prime)
+[rshell](https://github.com/dhylands/rshell)
+[stackexchange posting about dumping via rshell](https://bricks.stackexchange.com/questions/15068/how-to-dump-the-micropython-filesystem-from-the-spike-prime-and-mindstorms-v4)
