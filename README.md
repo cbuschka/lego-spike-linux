@@ -50,7 +50,7 @@ hub.display.show('hello world')
 
 exploring the api:
 ```
-[k for k,v in dict(hub)]
+[k for k in dir(hub)]
 ```
 
 references
